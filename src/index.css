@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  font-family: 'Gaegu', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--warado-turquoise);
+  min-width: 363px;
+  width: 50%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.input-field {
+  /* height: 58px; */
+  margin-bottom: 10px;
+  background-color: var(--warado-white);
+  color: var(--warado-black);
+  border-radius: 20px;
+  font-family: Gaegu;
+  font-size: 30px;
+  border: 10px solid var(--warado-white);
+  padding: auto;
+}
+
+.pink-button {
+  background: var(--warado-pink);
+  font-size: 30px;
+  font-family: 'Gaegu';
+  border-radius: 20px;
+  height: 58px;
+  padding-inline: 33px;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+}

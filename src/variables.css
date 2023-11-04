@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Gaegu';
+    src: url('../public/fonts/Gaegu-Regular.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Gaegu';
+    src: url('../public/fonts/Gaegu-Light.ttf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Gaegu';
+    src: url('../public/fonts/Gaegu-Bold.ttf');
+    font-weight: bold;
+}
+
+:root {
+    --warado-turquoise: #598387;
+    --warado-white: #D9D9D9;
+    --warado-black: #141414;
+    --warado-pink: #D19EA1;
+}
