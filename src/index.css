@@ -1,3 +1,8 @@
+html {
+  display: flex;
+  justify-content: center;
+}
+
 body {
   margin: 0;
   font-family: 'Gaegu', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -16,7 +21,6 @@ code {
 }
 
 .input-field {
-  /* height: 58px; */
   margin-bottom: 10px;
   background-color: var(--warado-white);
   color: var(--warado-black);
@@ -27,6 +31,11 @@ code {
   padding: auto;
 }
 
+.input-field-div {
+  display:flex;
+  flex-direction: column;
+}
+
 .pink-button {
   background: var(--warado-pink);
   font-size: 30px;
@@ -35,6 +44,7 @@ code {
   height: 58px;
   padding-inline: 33px;
   border: none;
+  border: 2px solid var(--warado-dark-pink);
 }
 
 button:hover {

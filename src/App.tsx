@@ -1,28 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import './variables.css';
-import LoginComponent from './components/LoginComponent/LoginComponent';
+import "./App.css";
+import "./variables.css";
+import LoginComponent from "./components/LoginComponent/LoginComponent";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import AgendaComponent from "./components/AgendaComponent/AgendaComponent";
+import MainComponent from "./MainComponent";
+import { useState } from "react";
+import HeaderComponent from "./components/HeaderComponent/HeaderComponent";
 
 function App() {
+  const [loggedIn, setLoggedIn] = useState(false);
+
   return (
-    <LoginComponent></LoginComponent>
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.tsx</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
+    <div className="main-container">
+      <HeaderComponent />
+      
+      <Router>
+        <Routes>
+          {/* <Route path="/" element={<MainComponent />} /> */}
+          <Route path="/login" element={<LoginComponent />} />
+          <Route path="/agenda" element={<AgendaComponent />} />
+        </Routes>
+      </Router>
+
+      {loggedIn 
+      ? <MainComponent loggedIn={loggedIn} setLoggedIn={setLoggedIn} />
+      : <LoginComponent loggedIn={loggedIn} setLoggedIn={setLoggedIn} />
+      }
+    </div>
   );
 }
 

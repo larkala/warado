@@ -1,0 +1,8 @@
+.navbar-container{
+    position: absolute;
+    bottom: 0px;
+    width: 100vw;
+    left: 0px;
+    background-color: var(--warado-pink);
+    border-top: 2px solid var(--warado-dark-pink);
+}
